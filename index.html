@@ -224,7 +224,7 @@ const CATEGORIES = {
   ]
 };
 
-// 🟢 20 TOP HINDI ANIME & MOVIE SERVERS
+// 🟢 50+ SERVERS (30 NEW ADDED)
 const SOURCES = [
   // --- ANIME SPECIFIC (Hindi Dub Supported) ---
   {name:'ToonStream', type:'anime', build:(id,t,s,e,l)=>`https://toonstream.us/embed/tv/${id}/${s}/${e}`},
@@ -249,7 +249,39 @@ const SOURCES = [
   {name:'Vidify', type:'all', build:(id,t,s,e,l)=>`https://vidify.top/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
   {name:'2Embed', type:'all', build:(id,t,s,e,l)=>`https://www.2embed.cc/embed${t==='tv'?'tv':''}/${id}${t==='tv'?`&s=${s}&e=${e}`:''}`},
   {name:'Gomo.to', type:'all', build:(id,t,s,e,l)=>`https://gomo.to/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
-  {name:'HDMovies4U', type:'movie', build:(id,t,s,e,l)=>`https://hdmovies4u.green/embed/movie/${id}`}
+  {name:'HDMovies4U', type:'movie', build:(id,t,s,e,l)=>`https://hdmovies4u.green/embed/movie/${id}`},
+
+  // --- 🆕 30 NEW SERVERS ---
+  {name:'VidFast', type:'all', build:(id,t,s,e,l)=>`https://vidfast.pro/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}?autoplay=true${l?`&lang=${l}`:''}`},
+  {name:'VidLink', type:'all', build:(id,t,s,e,l)=>`https://vidlink.pro/${t}/${id}${t==='tv'?`/${s}/${e}`:''}?autoplay=true${l?`&lang=${l}`:''}`},
+  {name:'VidSrc.pm', type:'all', build:(id,t,s,e,l)=>`https://vidsrc.pm/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'2Embed.skin', type:'all', build:(id,t,s,e,l)=>`https://2embed.skin/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'VidSrc.to', type:'all', build:(id,t,s,e,l)=>`https://vidsrc.to/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'2Embed.cc', type:'all', build:(id,t,s,e,l)=>`https://www.2embed.cc/embed${t==='tv'?'tv':''}/${id}${t==='tv'?`&s=${s}&e=${e}`:''}`},
+  {name:'Nontongo', type:'all', build:(id,t,s,e,l)=>`https://nontongo.win/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'AutoEmbed', type:'all', build:(id,t,s,e,l)=>`https://autoembed.co/${t}/tmdb/${id}${t==='tv'?`-${s}-${e}`:''}`},
+  {name:'MoviesAPI.to', type:'all', build:(id,t,s,e,l)=>`https://moviesapi.to/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'Frembed', type:'all', build:(id,t,s,e,l)=>`https://frembed.co/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'111Movies', type:'all', build:(id,t,s,e,l)=>`https://111movies.net/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'VidNest', type:'all', build:(id,t,s,e,l)=>`https://vidnest.fun/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'Videasy', type:'all', build:(id,t,s,e,l)=>`https://videasy.net/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'VidSrc.net', type:'all', build:(id,t,s,e,l)=>`https://vidsrc.net/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'Embed.su', type:'all', build:(id,t,s,e,l)=>`https://embed.su/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'VidSrc.rip', type:'all', build:(id,t,s,e,l)=>`https://vidsrc.rip/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'VidSrc.icu', type:'all', build:(id,t,s,e,l)=>`https://vidsrc.icu/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'VidSrc.mov', type:'all', build:(id,t,s,e,l)=>`https://vidsrc.mov/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'EmbedMaster', type:'all', build:(id,t,s,e,l)=>`https://embedmaster.link/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'StreamFlix', type:'all', build:(id,t,s,e,l)=>`https://streamflix.to/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'NetMirror', type:'all', build:(id,t,s,e,l)=>`https://netmirror.app/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'HDGharTV', type:'all', build:(id,t,s,e,l)=>`https://hdghartv.com/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'OneTouchTV', type:'all', build:(id,t,s,e,l)=>`https://onetouchtv.com/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'ZXCStreams', type:'all', build:(id,t,s,e,l)=>`https://zxcstreams.com/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'VixSrc', type:'all', build:(id,t,s,e,l)=>`https://vixsrc.to/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'PrimeSrc', type:'all', build:(id,t,s,e,l)=>`https://primesrc.me/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}?lang=${l||'hi'}`},
+  {name:'PlayEmbed', type:'all', build:(id,t,s,e,l)=>`https://playembed.net/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'MultiEmbed', type:'all', build:(id,t,s,e,l)=>`https://multiembed.mov/?video_id=${id}&tmdb=1${t==='tv'?`&s=${s}&e=${e}`:''}`},
+  {name:'FSAPI', type:'all', build:(id,t,s,e,l)=>`https://fsapi.xyz/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`},
+  {name:'CinemaOS', type:'all', build:(id,t,s,e,l)=>`https://cinemaos.tech/embed/${t}/${id}${t==='tv'?`/${s}/${e}`:''}`}
 ];
 
 const state = {
